@@ -7,7 +7,7 @@ The website has a sticky top navigation bar, a hamburger menu that only shows up
 
 ## Website link
 
-Visit the following link to see the website:
+Visit the following link to see the website: https://djoeskode.netlify.app/
 
 ## Languages and Tools
 
