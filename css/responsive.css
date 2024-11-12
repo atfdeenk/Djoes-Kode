@@ -6,16 +6,25 @@
     display: block;
     float: right;
   }
-  .ham-toggle, .clsBtn {
+  .ham-toggle,
+  .clsBtn {
     display: none;
   }
   .rightnav-link {
     display: none;
+  }
+  main {
+    margin: 20px 40px;
+    padding: 10px;
   }
   .grid-container {
     display: block;
   }
   .grid-item {
     margin-bottom: 10px;
+  }
+  .copyright {
+    padding: 10px;
+    text-align: center;
   }
 }
