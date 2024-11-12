@@ -13,21 +13,10 @@
   .rightnav-link {
     display: none;
   }
-  main {
-    margin: 20px 40px;
-    padding: 10px;
-  }
-  .gallery {
-    width: 100%;
-  }
   .grid-container {
     display: block;
   }
   .grid-item {
     margin-bottom: 10px;
-  }
-  .copyright {
-    padding: 10px;
-    text-align: center;
   }
 }
