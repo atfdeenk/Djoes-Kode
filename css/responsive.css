@@ -3,10 +3,10 @@
     text-align: justify;
   }
   .ham-label {
-    display: inline-block;
+    display: block;
     float: right;
   }
-  .ham-toggle {
+  .ham-toggle, .clsBtn {
     display: none;
   }
   .rightnav-link {
