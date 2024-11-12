@@ -125,7 +125,7 @@ img {
   filter: drop-shadow(0 0 0.75rem red);
 }
 
-.grid-item:hover {
+img:hover {
   animation: imgAnim 2s ease 0s 1 normal forwards;
   cursor: pointer;
 }
