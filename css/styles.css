@@ -8,7 +8,7 @@
 body {
   font-family: 'Sour Gummy', sans-serif;
   text-shadow: 2px 2px 8px red;
-  background-image: url(/assets/bg.webp);
+  background-image: url(/assets/bg2-small.jpg);
   background-repeat: repeat-y;
   background-position: center;
   background-size: contain;
@@ -26,7 +26,8 @@ li {
 /* header */
 header {
   font-size: 0;
-  animation: myAnim 3s linear 1s 2 normal forwards;
+  /* animation: myAnim 3s linear 1s 2 normal forwards; */
+  animation: bounce-in-top 2s both;
 }
 .banner-desktop,
 .banner-mobile {
@@ -43,7 +44,7 @@ header {
   overflow: hidden;
   padding: 20px 50px;
   text-align: center;
-  background-image: url(/assets/bg.webp);
+  background-image: url(/assets/bg2-small.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -197,6 +198,43 @@ img {
 
   100% {
     transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
   }
 }
 /* banner animation end */
