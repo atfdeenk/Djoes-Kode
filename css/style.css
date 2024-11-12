@@ -43,7 +43,7 @@ header {
   overflow: hidden;
   padding: 20px 50px;
   text-align: center;
-  background-image: url(/assets/bg.png);
+  background-image: url(/assets/bg.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -77,9 +77,13 @@ header {
   background-color: dodgerblue;
 }
 
+.clsBtn {
+  font-size: 17px;
+}
+
 .ham-icon,
 .ham-label,
-.ham-toggle {
+.ham-toggle  {
   display: none;
 }
 /* navigation end*/

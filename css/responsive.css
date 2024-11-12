@@ -6,6 +6,9 @@
     display: inline-block;
     float: right;
   }
+  .ham-toggle {
+    display: none;
+  }
   .rightnav-link {
     display: none;
   }
