@@ -17,6 +17,9 @@
     margin: 20px 40px;
     padding: 10px;
   }
+  .gallery {
+    width: 100%;
+  }
   .grid-container {
     display: block;
   }
