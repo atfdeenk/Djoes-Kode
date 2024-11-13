@@ -21,8 +21,10 @@ function toggleDarkMode() {
   if (!document.getElementById("checkbox-dark-mode").checked) {
     localStorage.setItem("darkMode", false);
     bulb.src ="/assets/dark mode icon/bulb-dark.png";
+    document.querySelector(".ham-icon").style.color = "black";
   } else {
     localStorage.setItem("darkMode", true);
+    document.querySelector(".ham-icon").style.color = "white";
     bulb.src = "/assets/dark mode icon/bulb-light.png";
   }
 }
