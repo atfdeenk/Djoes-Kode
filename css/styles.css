@@ -38,6 +38,10 @@ header {
 /* header end */
 
 /* navigation */
+nav{
+  width: 100vw;
+  height: auto;
+}
 .topnav {
   position: sticky;
   top: 0;
@@ -45,15 +49,16 @@ header {
   overflow: hidden;
   padding: 20px 50px;
   text-align: center;
-  background-image: url(/assets/bg2-small.jpg);
-  background-repeat: no-repeat;
+  background-image: url(/assets/bg2-small.webp);
+  background-repeat: repeat-y;
   background-position: center;
   background-size: cover;
 }
 
-.topnav a {
+.topnav a, .ham-icon {
   text-decoration: none;
   color: black;
+  font-size: x-large;
 }
 
 .topnav-right {
@@ -62,11 +67,10 @@ header {
 
 .nav-title {
   float: left;
-  font-size: large;
 }
 
 .nav-title a:hover {
-  font-size: x-large;
+  font-weight: bolder;
 }
 
 .rightnav-link {
@@ -79,16 +83,45 @@ header {
   background-color: dodgerblue;
 }
 
-.clsBtn {
-  font-size: 17px;
-}
-
-.ham-icon,
-.ham-label,
-.ham-toggle,
-.clsBtn {
+.ham-icon{
   display: none;
 }
+/* sidenav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  padding: 0;
+  /* margin-left: 50px; */
+}
+/* sidenav end */
 /* navigation end*/
 
 /* main */
@@ -97,6 +130,10 @@ main {
   padding: 10px;
 }
 
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
 /* menu */
 .menu {
   margin-bottom: 50px;
@@ -111,6 +148,7 @@ ul {
 /* gallery */
 .gallery {
   width: 100%;
+  scroll-snap-type: y mandatory;
 }
 
 .grid-container {

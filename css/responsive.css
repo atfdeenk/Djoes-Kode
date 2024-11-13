@@ -2,16 +2,18 @@
   body {
     text-align: justify;
   }
-  .ham-label {
+  .rightnav-link {
+    display: none;
+  }
+  .ham-icon {
     display: block;
     float: right;
   }
-  .ham-toggle,
-  .clsBtn {
-    display: none;
+  .sidenav {
+    padding-top: 15px;
   }
-  .rightnav-link {
-    display: none;
+  .sidenav a {
+    font-size: 18px;
   }
   .grid-container {
     display: block;
