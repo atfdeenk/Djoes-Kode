@@ -1,7 +1,7 @@
 # Djoes Kode
 
 Im building a responsive website inspired by a juice cafe.
-The website has a sticky top navigation bar, a hamburger menu that only shows up in smaller device, asymmetrical grid, responsive background image, and responsive image with **picture + source + srcset method**. The website also has a grid layout displaying several image. I style the text in the website using an embedded from google font named **_Sour Gummy_** and applying text shadow on every text. Also, styling the list using **_katakana-iroha_**. I also added some animation on various part to sweeten things up.😊
+The website has Dark Mode toggle, a sticky top navigation bar, a hamburger menu that only shows up in smaller device, asymmetrical grid, responsive background image, and responsive image with **picture + source + srcset method**. The website also has a grid layout displaying several image. I style the text in the website using an embedded from google font named **_Sour Gummy_** and applying text shadow on every text. Also, styling the list using **_katakana-iroha_**. I also added some animation on various part to sweeten things up.😊
 
 ![bmw](/assets/logo/djoes%20kode%20logo.png 'djoes kode')
 
