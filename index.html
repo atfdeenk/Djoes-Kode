@@ -27,7 +27,7 @@
   </head>
   <body>
     <header>
-      <picture class="banner-container">
+      <picture  id="banner-container">
         <source
           class="banner-desktop"
           media="(min-width: 768px)"
@@ -41,20 +41,18 @@
       </picture>
     </header>
     <nav class="topnav">
-      
       <span class="nav-title"><a href="#">Djoes Kode</a></span>
       <span id="dark-mode-switch">
         <div class="darkMode-container">
-        <label class="switch">
-          <!-- <div class="darkMode-icon">
-            <img class="bulb-dark" id="bulb-dark" src="/assets/dark mode icon/bulb-dark.png" alt="bulb-dark" onclick="darkMode('on')">
-          </div> -->
+        <label for="checkbox-dark-mode" class="switch">
+          <div class="darkMode-icon">
+            <img class="bulb" id="bulb" src="/assets/dark mode icon/bulb-dark.png" alt="bulb">
+          </div>
           <div>
             <input id="checkbox-dark-mode" onchange="toggleDarkMode()" type="checkbox">
             <span class="slider round"></span>
           </div>
         </label>
-        <p>Dark Mode</p>
         </div>
       </span>
       <section class="topnav-right">

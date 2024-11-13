@@ -45,13 +45,13 @@ nav {
 
 .topnav {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 1;
-  overflow: hidden;
-  padding: 20px 50px;
+  /* overflow: hidden; */
+  padding: 10px 40px;
   text-align: center;
   background-image: url(/assets/bg2-small.webp);
   background-repeat: repeat-y;
@@ -64,14 +64,6 @@ nav {
   text-decoration: none;
   color: black;
   font-size: x-large;
-}
-
-.topnav-right {
-  float: right;
-}
-
-.nav-title {
-  float: left;
 }
 
 .nav-title a:hover {
@@ -93,17 +85,25 @@ nav {
 }
 
 /* dark mode */
-.switch {
+.darkMode-container {
   display: flex;
 }
 .darkMode-icon {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
-.bulb-dark {
+
+.bulb {
   width: 100%;
   height: auto;
 }
+
+.hide-banner {
+  display: none;
+  filter: brightness(10%);
+}
+
 .dark-mode {
   background-image: none;
   background-color: black;
@@ -123,7 +123,7 @@ nav {
 /* The switch - the box around the slider */
 .switch {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   width: 36px;
   height: 22px;
 }
@@ -137,6 +137,7 @@ nav {
 
 /* The slider */
 .slider {
+  display: none;
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -198,6 +199,7 @@ nav > #dark-mode-switch > p {
   margin-right: 8px;
 }
 /* dark mode end */
+
 /* sidenav */
 .sidenav {
   height: 100%;
@@ -231,15 +233,13 @@ nav > #dark-mode-switch > p {
   right: 10px;
   font-size: 36px;
   padding: 0;
-  /* margin-left: 50px; */
 }
 /* sidenav end */
 /* navigation end*/
 
 /* main */
 main {
-  margin: 20px 40px;
-  padding: 10px;
+  margin: 0 40px;
 }
 
 #main {
@@ -419,5 +419,4 @@ img {
   }
 }
 /* gallery's image animation */
-
 /* animation end */

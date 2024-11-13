@@ -2,9 +2,15 @@
   body {
     text-align: justify;
   }
+  
   .rightnav-link {
     display: none;
   }
+
+  /* .topnav-right a:not(:first-child) {
+    display: none;
+  } */
+
   .ham-icon {
     display: block;
     float: right;
@@ -12,12 +18,15 @@
   .sidenav {
     padding-top: 15px;
   }
+
   .sidenav a {
     font-size: 18px;
   }
+
   .grid-container {
     display: block;
   }
+
   .grid-item {
     margin-bottom: 10px;
   }
