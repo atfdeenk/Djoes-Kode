@@ -13,6 +13,7 @@ function closeNav() {
  if (localStorage.getItem("darkMode") === "true") {
   document.getElementById("checkbox-dark-mode").checked = true;
   document.body.classList.add("dark-mode");
+  document.querySelector(".ham-icon").style.color = "white";
   bulb.src = "/assets/dark mode icon/bulb-light.png";
 }
 
