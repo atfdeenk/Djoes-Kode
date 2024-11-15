@@ -45,7 +45,7 @@ nav {
 
 .topnav {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
@@ -59,11 +59,30 @@ nav {
   background-size: cover;
 }
 
+.topnav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+
+.topnav-right a:hover {
+  background-color: dodgerblue;
+}
+
+.ham-icon {
+  display: none;
+}
+
 .topnav a,
 .ham-icon {
   text-decoration: none;
   color: black;
   font-size: x-large;
+}
+
+.nav-title {
+  text-align: left;
 }
 
 .nav-title a:hover {
@@ -76,18 +95,25 @@ nav {
   transition: background-color 2s ease-out;
 }
 
-.topnav-right a:hover {
-  background-color: dodgerblue;
+.contact-form-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 20px;
 }
 
-.ham-icon {
-  display: none;
+.msg-icon {
+  width: 100%;
+  height: auto;
 }
 
 /* dark mode */
 .darkMode-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .darkMode-icon {
   width: 30px;
   height: 30px;
@@ -264,7 +290,7 @@ ul {
   /* scroll-snap-type: y mandatory; */
 }
 
-/* gallery carousel */
+/* gallery's carousel */
 .carousel {
   margin: 50px auto;
   width: 100%;
@@ -318,7 +344,7 @@ ul {
 
 .numbertext {
   color: #f2f2f2;
-  font-size: 12px;
+  font-size: 3rem;
   padding: 8px 12px;
   position: absolute;
   top: 0;
@@ -421,8 +447,12 @@ ul {
 
 /* footer */
 /* contact form */
-.sect-contact {
-  display: none;
+/* .show {
+  display: block;
+} */
+
+.contact-form {
+  /* display: none; */
   border-radius: 8px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -430,6 +460,7 @@ ul {
   margin-top: 80px;
   width: 70vw;
 }
+
 .contactUs {
   text-align: center;
 }
