@@ -42,31 +42,34 @@
     </header>
     <nav class="topnav">
       <span class="nav-title"><a href="#">Djoes Kode</a></span>
-      <span id="dark-mode-switch">
-        <div class="darkMode-container">
-        <label for="checkbox-dark-mode" class="switch">
-          <div class="darkMode-icon">
-            <img class="bulb" id="bulb" src="/assets/dark mode icon/bulb-dark.png" alt="bulb">
-          </div>
-          <div>
-            <input id="checkbox-dark-mode" onchange="toggleDarkMode()" type="checkbox">
-            <span class="slider round"></span>
-          </div>
-        </label>
-        </div>
-      </span>
       <section class="topnav-right">
+        <div class="darkMode-container">
+          <label for="checkbox-dark-mode" class="switch">
+            <div class="darkMode-icon">
+              <img class="bulb" id="bulb" src="/assets/bulb/bulb-dark.png" alt="bulb">
+            </div>
+            <div>
+              <input id="checkbox-dark-mode" onchange="toggleDarkMode()" type="checkbox">
+              <span class="slider round"></span>
+            </div>
+          </label>
+          </div>
+          <span class="ham-icon" onclick="openNav()">&#9776;</span>
+       <div>
         <a class="rightnav-link" href="#">HOME</a>
         <a class="rightnav-link" href="#gallery">GALLERY</a>
         <a class="rightnav-link" href="#menu">MENU</a>
+       </div>
       </section>
       <section class="sidenav" id="sidenav">
-        <a href="javascript:void(0);" class="closeBtn" onclick="closeNav()">&times;</a>
+        <div>
+          <a href="javascript:void(0);" class="closeBtn" onclick="closeNav()">&times;</a>
         <a class="rightnav-link" href="#">HOME</a>
         <a class="rightnav-link" href="#gallery">GALLERY</a>
         <a class="rightnav-link" href="#menu">MENU</a>
+        </div>
       </section>
-      <span class="ham-icon" onclick="openNav()">&#9776;</span>
+      
     </nav>
     <main id="main">
       <div class="menu">
@@ -87,21 +90,46 @@
         <div class="carousel">
           <div class="slideshow-container">
             <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
+              <div class="numbertext">1 / 6</div>
               <picture>
                 <source media="(min-width: 769px)" srcset="/assets/gallery/item1-large.webp">
                 <img class="slideshow-container-img" src="/assets/gallery/item1-small.webp">
               </picture>
             </div>
-            
             <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img class="slideshow-container-img" src="/assets/gallery/item2-small.webp">
+              <div class="numbertext">2 / 6</div>
+              <picture>
+                <source media="(min-width: 769px)" srcset="/assets/gallery/item2-large.webp">
+                <img class="slideshow-container-img" src="/assets/gallery/item2-small.webp">
+              </picture>
             </div>
-            
             <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img class="slideshow-container-img" src="/assets/gallery/item3-small.webp">
+              <div class="numbertext">3 / 6</div>
+              <picture>
+                <source media="(min-width: 769px)" srcset="/assets/gallery/item3-large.webp">
+                <img class="slideshow-container-img" src="/assets/gallery/item3-small.webp">
+              </picture>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 6</div>
+              <picture>
+                <source media="(min-width: 769px)" srcset="/assets/gallery/item4-large.webp">
+                <img class="slideshow-container-img" src="/assets/gallery/item4-small.webp">
+              </picture>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 6</div>
+              <picture>
+                <source media="(min-width: 769px)" srcset="/assets/gallery/item5-large.webp">
+                <img class="slideshow-container-img" src="/assets/gallery/item5-small.webp">
+              </picture>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">6 / 6</div>
+              <picture>
+                <source media="(min-width: 769px)" srcset="/assets/gallery/item6-large.webp">
+                <img class="slideshow-container-img" src="/assets/gallery/item6-small.webp">
+              </picture>
             </div>
             
             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -113,6 +141,9 @@
               <span class="dot" onclick="currentSlide(1)"></span> 
               <span class="dot" onclick="currentSlide(2)"></span> 
               <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+              <span class="dot" onclick="currentSlide(6)"></span> 
             </div>
         </div>
         <!-- grid -->
@@ -179,7 +210,8 @@
     <footer>
        <!-- contact us section -->
        <section class="sect-contact">
-        <h2 class="contactUs">Contact Us</h2>
+        <div class="contact-form" id="contact-form">
+          <h2 class="contactUs">Contact Us</h2>
         <form id="contact" action="" method="">
           <label for="name">Name</label>
           <input
@@ -508,6 +540,7 @@
           ></textarea>
           <input type="submit" value="Send Message" />
         </form>
+        </div>
       </section>
       <!-- end of contact us section -->
       <div class="copyright">

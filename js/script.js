@@ -1,6 +1,6 @@
 // sidenav
 function openNav() {
-  document.getElementById('sidenav').style.width = '150px';
+  document.getElementById('sidenav').style.width = '100px';
 }
 
 function closeNav() {
@@ -14,24 +14,25 @@ function closeNav() {
   document.getElementById("checkbox-dark-mode").checked = true;
   document.body.classList.add("dark-mode");
   document.querySelector(".ham-icon").style.color = "white";
-  bulb.src = "/assets/dark mode icon/bulb-light.png";
+  bulb.src = "/assets/bulb/bulb-light.png";
 }
 
 function toggleDarkMode() {
   document.body.classList.toggle("dark-mode");
   if (!document.getElementById("checkbox-dark-mode").checked) {
     localStorage.setItem("darkMode", false);
-    bulb.src ="/assets/dark mode icon/bulb-dark.png";
+    bulb.src ="/assets/bulb/bulb-dark.png";
     document.querySelector(".ham-icon").style.color = "black";
   } else {
     localStorage.setItem("darkMode", true);
     document.querySelector(".ham-icon").style.color = "white";
-    bulb.src = "/assets/dark mode icon/bulb-light.png";
+    bulb.src = "/assets/bulb/bulb-light.png";
   }
 }
 // dark mode end
+
 // carousel
-let slideIndex = 0;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
