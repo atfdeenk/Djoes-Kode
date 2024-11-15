@@ -87,6 +87,7 @@
       <section class="gallery" id="gallery">
         <h1>GALLERY</h1>
         <p>Here are several photos showing our places and products</p>
+        <!-- carousel using css only -->
         <section class="carousel" aria-label="Gallery">
           <ol class="carousel__viewport">
             <li id="carousel__slide1"
@@ -148,7 +149,9 @@
             </ol>
           </aside>
         </section>
-        <!-- <div class="carousel">
+        <!-- carousel using css only -->
+        <!-- carousel using js -->
+        <div class="carousel-js">
           <div class="slideshow-container">
             <div class="mySlides fade">
               <div class="numbertext">1 / 6</div>
@@ -206,7 +209,8 @@
               <span class="dot" onclick="currentSlide(5)"></span> 
               <span class="dot" onclick="currentSlide(6)"></span> 
             </div>
-        </div> -->
+        </div>
+         <!-- carousel using js -->
         <!-- grid -->
         <div class="grid-container">
           <figure class="grid-item item1">
@@ -274,11 +278,11 @@
         <div class="contact-form" id="contact-form">
           <h2 class="contactUs">Contact Us</h2>
         <form id="contact" action="" method="">
-          <label for="name">Name</label>
+          <label for="nama">Name</label>
           <input
             type="text"
-            name="name"
-            class="name"
+            name="nama"
+            class="nama"
             placeholder="Your Name"
             required
           />

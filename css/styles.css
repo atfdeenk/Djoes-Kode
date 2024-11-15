@@ -514,14 +514,14 @@ ol, li {
 
 
 
-.carousel {
+.carousel, .carousel-js {
   margin: 50px auto;
   width: 100%;
 }
 
 /* carousel with js */
 /* Slideshow container */
-/* .slideshow-container {
+.slideshow-container {
   width: 100%;
   height: 100%;
   position: relative;
@@ -598,7 +598,7 @@ ol, li {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
-} */
+}
 /* carousel with js end*/
 /* gallery carousel end */
 
