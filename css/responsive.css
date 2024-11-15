@@ -30,4 +30,6 @@
   .grid-item {
     margin-bottom: 10px;
   }
+  
+  .prev, .next,.text {font-size: 1rem}
 }
